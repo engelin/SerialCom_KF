@@ -1,0 +1,284 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어(대한민국) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\SerialCom.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.kor\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\NetTrafficButton.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SERIALCOM_DIALOG DIALOGEX 0, 0, 506, 428
+STYLE DS_SETFONT | WS_MINIMIZEBOX | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "SerialCom"
+FONT 9, "굴림체", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_SEND,36,107,243,49,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN | NOT WS_VISIBLE
+    PUSHBUTTON      "&Send",IDC_SEND_DATA,295,107,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Clear",IDC_SEND_DATA_CLEAR,295,137,50,14,NOT WS_VISIBLE
+    EDITTEXT        IDC_RECEIVE,36,193,243,205,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN | NOT WS_VISIBLE
+    PUSHBUTTON      "Clear",IDC_RECEIVE_DATA_CLEAR,295,193,50,14,NOT WS_VISIBLE
+    EDITTEXT        IDC_CONTROL,36,27,243,49,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN
+    PUSHBUTTON      "Clear",IDC_CONTROLBOXCLEAR,295,27,50,14
+    COMBOBOX        IDC_SERIAL_PORT,432,26,48,209,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_BAUD_RATE,432,46,48,157,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_DATA_BIT,432,66,48,110,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_STOP_BIT,432,86,48,152,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_PARITY,432,106,48,132,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Open",IDC_PORT_OPEN,376,132,50,14
+    PUSHBUTTON      "&Close",IDC_PORT_CLOSE,432,132,50,14
+    COMBOBOX        IDC_SEND_DATA_TYPE,432,183,48,60,CBS_DROPDOWNLIST | NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_RECEIVE_DATA_TYPE,432,184,48,86,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "File Open",IDC_FILE_OPEN,376,349,50,14
+    PUSHBUTTON      "File Save",IDC_FILE_SAVE,432,349,50,14
+    PUSHBUTTON      "&Quit",IDC_QUIT,439,388,50,14
+    GROUPBOX        "Port",IDC_STATIC,365,15,123,151
+    LTEXT           "Serial Port",IDC_STATIC,376,30,45,8
+    LTEXT           "Baud Rate",IDC_STATIC,376,50,37,8
+    LTEXT           "Data Bit",IDC_STATIC,376,70,33,8
+    LTEXT           "Stop BIt",IDC_STATIC,376,90,33,8
+    LTEXT           "Parity",IDC_STATIC,376,110,25,8
+    GROUPBOX        "Data Type",IDC_STATIC,365,169,123,41
+    LTEXT           "Send",IDC_STATIC,376,187,17,8,NOT WS_VISIBLE
+    LTEXT           "Receive",IDC_STATIC,375,187,29,8
+    GROUPBOX        "File",IDC_STATIC,365,334,123,44
+    GROUPBOX        "Operation",IDC_STATIC,17,15,338,74
+    CONTROL         "",IDC_STATIC_DECA_VIEW,"Static",SS_WHITERECT,16,101,340,299
+    EDITTEXT        IDC_EDIT_dist1,413,259,67,14,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_dist2,413,277,67,14,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_dist3,413,295,68,14,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_theta,413,313,68,14,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "Distance1",IDC_STATIC,371,262,37,8
+    LTEXT           "Distance2",IDC_STATIC,371,279,37,8
+    LTEXT           "Anchor-Tag",IDC_STATIC,368,298,41,8
+    LTEXT           "Theta",IDC_STATIC,380,316,21,8
+    GROUPBOX        "Filtering Type",IDC_STATIC,365,213,123,40
+    LTEXT           "Filter",IDC_STATIC,375,231,25,8
+    COMBOBOX        IDC_FILTER_TYPE,432,229,48,132,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,2,0,0
+ PRODUCTVERSION 1,2,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041204b0"
+        BEGIN
+            VALUE "FileDescription", "SerialCom 응용 프로그램"
+            VALUE "FileVersion", "1,2,0,0"
+            VALUE "InternalName", "SerialCom"
+            VALUE "LegalCopyright", "Copyright (C)radeca"
+            VALUE "OriginalFilename", "SerialCom.EXE"
+            VALUE "ProductName", "SerialCom"
+            VALUE "ProductVersion", "1,2,0,0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_SERIALCOM_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 499
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 421
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_SERIALCOM_DIALOG DLGINIT
+BEGIN
+    IDC_SERIAL_PORT, 0x403, 5, 0
+0x4f43, 0x314d, "\000" 
+    IDC_SERIAL_PORT, 0x403, 5, 0
+0x4f43, 0x324d, "\000" 
+    IDC_SERIAL_PORT, 0x403, 5, 0
+0x4f43, 0x334d, "\000" 
+    IDC_SERIAL_PORT, 0x403, 5, 0
+0x4f43, 0x344d, "\000" 
+    IDC_SERIAL_PORT, 0x403, 5, 0
+0x4f43, 0x354d, "\000" 
+    IDC_SERIAL_PORT, 0x403, 5, 0
+0x4f43, 0x364d, "\000" 
+    IDC_SERIAL_PORT, 0x403, 5, 0
+0x4f43, 0x374d, "\000" 
+    IDC_SERIAL_PORT, 0x403, 5, 0
+0x4f43, 0x384d, "\000" 
+    IDC_SERIAL_PORT, 0x403, 5, 0
+0x4f43, 0x394d, "\000" 
+    IDC_SERIAL_PORT, 0x403, 6, 0
+0x4f43, 0x314d, 0x0030, 
+    IDC_BAUD_RATE, 0x403, 5, 0
+0x3834, 0x3030, "\000" 
+    IDC_BAUD_RATE, 0x403, 5, 0
+0x3639, 0x3030, "\000" 
+    IDC_BAUD_RATE, 0x403, 6, 0
+0x3431, 0x3034, 0x0030, 
+    IDC_BAUD_RATE, 0x403, 6, 0
+0x3931, 0x3032, 0x0030, 
+    IDC_BAUD_RATE, 0x403, 6, 0
+0x3833, 0x3034, 0x0030, 
+    IDC_BAUD_RATE, 0x403, 6, 0
+0x3635, 0x3030, 0x0030, 
+    IDC_BAUD_RATE, 0x403, 6, 0
+0x3735, 0x3036, 0x0030, 
+    IDC_BAUD_RATE, 0x403, 7, 0
+0x3131, 0x3235, 0x3030, "\000" 
+    IDC_DATA_BIT, 0x403, 6, 0
+0x2035, 0x4942, 0x0054, 
+    IDC_DATA_BIT, 0x403, 6, 0
+0x2036, 0x4942, 0x0054, 
+    IDC_DATA_BIT, 0x403, 6, 0
+0x2037, 0x4942, 0x0054, 
+    IDC_DATA_BIT, 0x403, 6, 0
+0x2038, 0x4942, 0x0054, 
+    IDC_STOP_BIT, 0x403, 6, 0
+0x2031, 0x4942, 0x0054, 
+    IDC_STOP_BIT, 0x403, 6, 0
+0x2032, 0x4942, 0x0054, 
+    IDC_PARITY, 0x403, 5, 0
+0x6f4e, 0x656e, "\000" 
+    IDC_PARITY, 0x403, 4, 0
+0x644f, 0x0064, 
+    IDC_PARITY, 0x403, 5, 0
+0x7645, 0x6e65, "\000" 
+    IDC_SEND_DATA_TYPE, 0x403, 4, 0
+0x4548, 0x0058, 
+    IDC_SEND_DATA_TYPE, 0x403, 6, 0
+0x5341, 0x4943, 0x0049, 
+    IDC_RECEIVE_DATA_TYPE, 0x403, 4, 0
+0x4548, 0x0058, 
+    IDC_RECEIVE_DATA_TYPE, 0x403, 6, 0
+0x5341, 0x4943, 0x0049, 
+    IDC_FILTER_TYPE, 0x403, 4, 0
+0x414d, 0x0046, 
+    IDC_FILTER_TYPE, 0x403, 3, 0
+0x464b, "\000" 
+    0
+END
+
+#endif    // 한국어(대한민국) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE 18, 1
+#pragma code_page(949)
+#endif //_WIN32
+#include "res\SerialCom.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.kor\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,39 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: SerialCom - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\NEC\LOCALS~1\Temp\RSP26.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Release/" /Fp"Release/SerialCom.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\찌르레기\소스\SerialCom\SerialComDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\NEC\LOCALS~1\Temp\RSP26.tmp" 
+Creating temporary file "C:\DOCUME~1\NEC\LOCALS~1\Temp\RSP27.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/SerialCom.pdb" /machine:I386 /out:"Release/SerialCom.exe" 
+".\Release\CommThread.obj"
+".\Release\SerialCom.obj"
+".\Release\SerialComDlg.obj"
+".\Release\StdAfx.obj"
+".\Release\SerialCom.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\NEC\LOCALS~1\Temp\RSP27.tmp"
+<h3>Output Window</h3>
+Compiling...
+SerialComDlg.cpp
+Linking...
+Creating command line "bscmake.exe /nologo /o"Release/SerialCom.bsc"  ".\Release\StdAfx.sbr" ".\Release\CommThread.sbr" ".\Release\SerialCom.sbr" ".\Release\SerialComDlg.sbr""
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+SerialCom.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
